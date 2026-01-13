@@ -1,9 +1,9 @@
-console.log(Math.floor(4.7));
-var x = {
+"use strict";
+const x = {
     name: "Alice",
     age: 30,
 };
-var Y = 10;
+let Y = 10;
 Y = 20;
 alert("x.name is " + x.name);
 console.log(x);

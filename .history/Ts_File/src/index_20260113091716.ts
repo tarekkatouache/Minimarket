@@ -10,5 +10,3 @@ let Y: number = 10;
 Y = 20;
 alert("x.name is " + x.name);
 console.log(x);
-let b: string = "hello";
-console.log(b);
