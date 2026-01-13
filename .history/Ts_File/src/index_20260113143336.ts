@@ -46,35 +46,3 @@ const person2: Person = {
 };
 console.log(person1.city);
 console.log(person2.city);
-
-type MyType = {
-  id: number;
-  value: string;
-};
-let myObject: MyType = {
-  id: 1,
-  value: "Test",
-};
-// console.log(myObject);
-enum BookingStatus {
-  initialized = "initialized",
-  confirmed = "confirmed",
-  cancelled = "cancelled",
-}
-let bookingStatus: BookingStatus = BookingStatus.initialized;
-bookingStatus = BookingStatus.confirmed;
-console.log(bookingStatus);
-
-class Animal {
-  name: string;
-  kind: string;
-  constructor(name: string, kind: string) {
-    this.name = name;
-    this.kind = kind;
-  }
-}
-const dog = new Animal("Buddy", " Dog");
-function sum(x: number | string, y: number | string): any {
-  return x + y;
-}
-console.log(sum(5, 10));

@@ -74,7 +74,7 @@ class Animal {
   }
 }
 const dog = new Animal("Buddy", " Dog");
-function sum(x: number | string, y: number | string): any {
+function sum(x: number | string, y: number | string): number {
   return x + y;
 }
 console.log(sum(5, 10));

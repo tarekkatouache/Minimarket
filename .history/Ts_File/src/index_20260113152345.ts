@@ -73,8 +73,3 @@ class Animal {
     this.kind = kind;
   }
 }
-const dog = new Animal("Buddy", " Dog");
-function sum(x: number | string, y: number | string): any {
-  return x + y;
-}
-console.log(sum(5, 10));

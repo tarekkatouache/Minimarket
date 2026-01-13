@@ -55,7 +55,7 @@ let myObject: MyType = {
   id: 1,
   value: "Test",
 };
-// console.log(myObject);
+console.log(myObject);
 enum BookingStatus {
   initialized = "initialized",
   confirmed = "confirmed",
@@ -64,17 +64,3 @@ enum BookingStatus {
 let bookingStatus: BookingStatus = BookingStatus.initialized;
 bookingStatus = BookingStatus.confirmed;
 console.log(bookingStatus);
-
-class Animal {
-  name: string;
-  kind: string;
-  constructor(name: string, kind: string) {
-    this.name = name;
-    this.kind = kind;
-  }
-}
-const dog = new Animal("Buddy", " Dog");
-function sum(x: number | string, y: number | string): any {
-  return x + y;
-}
-console.log(sum(5, 10));
