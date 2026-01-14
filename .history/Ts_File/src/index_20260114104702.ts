@@ -74,36 +74,6 @@ class Animal {
   }
 }
 const dog = new Animal("Buddy", " Dog");
-const sum = <T>(a: T, b: T) => {};
-sum<string>("SADF", "asdf");
-
-interface person {
-  name: string;
-  age: number;
-  email: string;
-}
-interface personWithoutEmail extends Omit<person, "email"> {}
-
-const personWithoutEmailObj: personWithoutEmail = {
-  name: "John",
-  age: 25,
+const sum = <T>(a: T, b: number) => {
+  return a + b;
 };
-interface personWithNameOnly extends Pick<person, "name"> {}
-const personWithNameOnlyObj: personWithNameOnly = {
-  name: "Jane",
-};
-
-interface PersonOptionaPersonalInfo extends Partial<person> {}
-const personOptionalInfoObj: PersonOptionaPersonalInfo = {
-  name: "Alice",
-};
-// promises with typescript
-const MyFuction = async () => {
-  return "Hello World";
-};
-const MyFuction2 = () => {
-  return new Promise<string>((resolve, reject) => {
-    resolve("Hello World");
-  });
-};
-const X = MyFuction2();

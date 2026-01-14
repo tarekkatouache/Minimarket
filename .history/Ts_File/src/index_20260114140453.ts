@@ -101,9 +101,3 @@ const personOptionalInfoObj: PersonOptionaPersonalInfo = {
 const MyFuction = async () => {
   return "Hello World";
 };
-const MyFuction2 = () => {
-  return new Promise<string>((resolve, reject) => {
-    resolve("Hello World");
-  });
-};
-const X = MyFuction2();

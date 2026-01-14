@@ -104,6 +104,6 @@ const MyFuction = async () => {
 const MyFuction2 = () => {
   return new Promise<string>((resolve, reject) => {
     resolve("Hello World");
+    reject("Error occurred");
   });
 };
-const X = MyFuction2();

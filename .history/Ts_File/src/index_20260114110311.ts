@@ -88,22 +88,11 @@ const personWithoutEmailObj: personWithoutEmail = {
   name: "John",
   age: 25,
 };
-interface personWithNameOnly extends Pick<person, "name"> {}
-const personWithNameOnlyObj: personWithNameOnly = {
-  name: "Jane",
-};
+interface personWithOptionalEmail extends Pick<person, "name"> {}
 
-interface PersonOptionaPersonalInfo extends Partial<person> {}
-const personOptionalInfoObj: PersonOptionaPersonalInfo = {
-  name: "Alice",
-};
-// promises with typescript
-const MyFuction = async () => {
-  return "Hello World";
-};
-const MyFuction2 = () => {
-  return new Promise<string>((resolve, reject) => {
-    resolve("Hello World");
-  });
-};
-const X = MyFuction2();
+console.log(personWithoutEmailObj);
+interface OptionalPerson {
+  name: string;
+  age?: number;
+  email?: string;
+}

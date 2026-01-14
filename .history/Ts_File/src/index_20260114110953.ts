@@ -97,13 +97,3 @@ interface PersonOptionaPersonalInfo extends Partial<person> {}
 const personOptionalInfoObj: PersonOptionaPersonalInfo = {
   name: "Alice",
 };
-// promises with typescript
-const MyFuction = async () => {
-  return "Hello World";
-};
-const MyFuction2 = () => {
-  return new Promise<string>((resolve, reject) => {
-    resolve("Hello World");
-  });
-};
-const X = MyFuction2();

@@ -106,4 +106,4 @@ const MyFuction2 = () => {
     resolve("Hello World");
   });
 };
-const X = MyFuction2();
+const x = MyFuction2();
